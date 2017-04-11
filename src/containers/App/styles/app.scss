@@ -45,6 +45,16 @@
     border-radius: $border-radius;
   }
 
+  .left-pane {
+    width: 40%;
+    display: inline-block;
+  }
+
+  .right-pane {
+    width: 60%;
+    display: inline-block;
+  }
+
 }
 
 @media (max-width: 1414px) {
