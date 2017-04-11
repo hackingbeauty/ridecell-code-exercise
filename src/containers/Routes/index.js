@@ -12,14 +12,22 @@ class Routes extends Component {
   displayRoutes() {
     const { routes } = this.props.route;
 
-    return routes.map((item) => {
-      Object.keys(item).forEach(function(key,index) {
-        console.log('the key is' ,key);
-        // return (<tr>{item.route}</tr>);
-      });
-      
-    });
+    debugger;
 
+    // return routes.map((item) => {
+      // debugger;
+      // Object.keys(item).forEach(function(key,index) {
+      //   console.log('the key is' ,key);
+      //   // return (<tr>{item.route}</tr>);
+      // });
+      
+    // });
+
+    for(key in routes) {
+      debugger;
+    }
+
+    return routesList;
 
   }
 

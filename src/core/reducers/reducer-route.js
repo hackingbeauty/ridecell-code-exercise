@@ -3,7 +3,8 @@ import constants from 'core/types';
 const routeObj = {}
 
 const initialState = {
-	routes: []
+	// routes: []
+  routes : {}
 };
 
 export function routeReducer(state = initialState, action) {
@@ -14,11 +15,11 @@ export function routeReducer(state = initialState, action) {
   	const routeId = action.dataPoint.entity[0].vehicle.trip.route_id;
   	setBusCount(routeId);
 
-  	const updatedRoutes = state.routes.slice();
-    updatedRoutes.splice(0, 0, routeObj);
+  	// const updatedRoutes = state.routes.slice();
+   //  updatedRoutes.splice(0, 0, routeObj);
 
     return Object.assign({}, state, {
-    	routes: updatedRoutes
+    	routes: routeObj
     });
 
   default:
