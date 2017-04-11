@@ -23,4 +23,10 @@ class Routes extends Component {
   }
 }
 
-export default connect(null, null)(Routes);
+function mapStateToProps(state) {
+  return {
+    route: state.route
+  };
+}
+
+export default connect(mapStateToProps)(Routes);

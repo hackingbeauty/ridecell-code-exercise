@@ -6,7 +6,6 @@ import getMuiTheme             from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider        from 'material-ui/styles/MuiThemeProvider';
 import RTM                     from 'satori-sdk-js';
 
-
 // global styles for entire app
 import './styles/app.scss';
 
