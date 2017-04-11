@@ -9,7 +9,17 @@ class Routes extends Component {
     super(props);
   }
 
+  displayRoutes() {
+    const { routes } = this.props.route;
+
+    return routes.map((item) => {
+      return (<tr>{item.route}</tr>);
+    });
+  }
+
   render() {
+    const routes = this.displayRoutes();
+
     return (
       <div className={styles}>
         <table>
@@ -17,6 +27,9 @@ class Routes extends Component {
             <th>Route</th>
             <th>Buses on Route</th>
           </tr>
+          <tbody>
+            {routes}
+          </tbody>
         </table>
       </div>
     );
