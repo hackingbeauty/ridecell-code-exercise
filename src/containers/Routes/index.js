@@ -13,8 +13,14 @@ class Routes extends Component {
     const { routes } = this.props.route;
 
     return routes.map((item) => {
-      return (<tr>{item.route}</tr>);
+      Object.keys(item).forEach(function(key,index) {
+        console.log('the key is' ,key);
+        // return (<tr>{item.route}</tr>);
+      });
+      
     });
+
+
   }
 
   render() {
